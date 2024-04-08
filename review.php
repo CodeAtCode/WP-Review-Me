@@ -64,6 +64,70 @@ if ( ! class_exists( 'WP_Review_Me' ) ) {
 		public $link_id;
 
 		/**
+		 * Days
+		 *
+		 * @since 1.0
+		 * @var string
+		 */
+		public $days;
+
+		/**
+		 * Type
+		 *
+		 * @since 1.0
+		 * @var string
+		 */
+		public $type;
+
+		/**
+		 * Slug
+		 *
+		 * @since 1.0
+		 * @var string
+		 */
+		public $slug;
+
+		/**
+		 * Rating
+		 *
+		 * @since 1.0
+		 * @var string
+		 */
+		public $rating;
+
+		/**
+		 * Message
+		 *
+		 * @since 1.0
+		 * @var string
+		 */
+		public $message;
+
+		/**
+		 * Link Label
+		 *
+		 * @since 1.0
+		 * @var string
+		 */
+		public $link_label;
+
+		/**
+		 * Cap
+		 *
+		 * @since 1.0
+		 * @var string
+		 */
+		public $cap;
+
+		/**
+		 * Scope
+		 *
+		 * @since 1.0
+		 * @var string
+		 */
+		public $scope;
+
+		/**
 		 * WP_Review_Me constructor.
 		 *
 		 * @since 1.0
@@ -382,7 +446,7 @@ if ( ! class_exists( 'WP_Review_Me' ) ) {
 			// Get the DNH notice ID ready
 			$notice_id = DNH()->get_id( str_replace( 'wrm-review-link-', '', $id ) );
 			$dismissed = DNH()->dismiss_notice( $notice_id );
-			
+
 			echo $dismissed;
 
 			/**
