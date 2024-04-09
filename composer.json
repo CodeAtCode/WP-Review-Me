@@ -1,7 +1,7 @@
 {
   "name": "codeatcode/wp-review-me",
   "description": "A lightweight library to help you get more reviews for your WordPress theme/plugin",
-  "homepage": "https://github.com/julien731/WP-Review-Me",
+  "homepage": "https://github.com/codeatcode/WP-Review-Me",
   "license": "GNU GPL",
   "authors": [
     {
@@ -12,7 +12,6 @@
     }
   ],
   "require": {
-    "php": ">=5.5.0",
     "mte90/wp-dismissible-notices-handler": "1.2.2"
   },
   "repositories": [
